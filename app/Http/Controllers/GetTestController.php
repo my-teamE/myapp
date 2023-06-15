@@ -29,9 +29,9 @@ class GetTestController extends Controller
 
             dd("cURLエラー: " . $error . " (" . $errorNo . ")");
         }
-        dd($response);
+        //連想配列で管理
+        dd(json_decode($response, true));
 
         curl_close($curl);
-        return view('toppage');
     }
 }
