@@ -1,0 +1,6 @@
+# kitoneのRESTAPIを簡単に確認出来るよう作成
+# TODO:チームメンバーにRESTclientをインストールするよう促す(6/18/0:42)
+
+###
+GET https://xd3utnv17sc2.cybozu.com/k/v1/records.json?app=5&id=1
+X-Cybozu-API-Token: onEZOHK2ueJA5ldNinvNpz6ShgdEv0fOSBkWZacD
