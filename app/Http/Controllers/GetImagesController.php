@@ -19,11 +19,12 @@ class GetImagesController extends Controller
         curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'GET');
         curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($curl, CURLOPT_CAINFO, 'C:\Users\2220399\Desktop\myapp-1\cacert.pem'); // cacert.pemファイルのパスを指定
+        curl_setopt($curl, CURLOPT_CAINFO, 'C:\Users\2220415\Desktop\myapp\cacert.pem'); // cacert.pemファイルのパスを指定
 
 
         $response = Http::withHeaders($headers)->get($url);
         $data = $response->json();
+        dd($data);
         $records = $data['records'];
 
         $fileKey = $records[0]['image']['value'][0]['2023061900400941CA415F35B542C39575409D4A1EEB20207'];
