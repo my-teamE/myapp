@@ -19,6 +19,7 @@ class GetTestController extends Controller
 
         curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'GET');
         curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($curl, CURLOPT_CAINFO, 'C:\Users\2220415\Desktop\myapp/cacert.pem'); // cacert.pemファイルのパスを指定
 
         $response = curl_exec($curl);
@@ -28,7 +29,8 @@ class GetTestController extends Controller
 
             dd("cURLエラー: " . $error . " (" . $errorNo . ")");
         }
-        dd($response);
+        //連想配列で管理
+        dd(json_decode($response, true));
 
         curl_close($curl);
     }
