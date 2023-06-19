@@ -4,3 +4,8 @@
 ###
 GET https://xd3utnv17sc2.cybozu.com/k/v1/records.json?app=5&id=1
 X-Cybozu-API-Token: onEZOHK2ueJA5ldNinvNpz6ShgdEv0fOSBkWZacD
+
+###
+GET https://xd3utnv17sc2.cybozu.com/k/v1/records.json?app=6
+X-Cybozu-API-Token: WDPSX1L5fSpI0gotEzB8ZjJyakVvCTs8trBJg7DY
+

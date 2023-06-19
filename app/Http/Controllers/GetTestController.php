@@ -20,7 +20,7 @@ class GetTestController extends Controller
         curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'GET');
         curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($curl, CURLOPT_CAINFO, 'C:\Users\2220415\Desktop\myapp/cacert.pem'); // cacert.pemファイルのパスを指定
+        curl_setopt($curl, CURLOPT_CAINFO, 'C:\Users\2220399\Desktop\myapp-1\cacert.pem'); // cacert.pemファイルのパスを指定
 
         $response = curl_exec($curl);
         if ($response === false) {
