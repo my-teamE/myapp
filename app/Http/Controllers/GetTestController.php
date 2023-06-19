@@ -29,7 +29,6 @@ class GetTestController extends Controller
 
             dd("cURLエラー: " . $error . " (" . $errorNo . ")");
         }
-
         //連想配列で管理
         dd(json_decode($response, true));
 
