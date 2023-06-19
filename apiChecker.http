@@ -10,5 +10,5 @@ GET https://xd3utnv17sc2.cybozu.com/k/v1/record.json?app=6&id=1
 X-Cybozu-API-Token: WDPSX1L5fSpI0gotEzB8ZjJyakVvCTs8trBJg7DY
 
 ###
-GET https://xd3utnv17sc2.cybozu.com/k/v1/file.json?fileKey=201202061155587E339F9067544F1A92C743460E3D12B3297
-X-Cybouzu-API-Token: WDPSX1L5fSpI0gotEzB8ZjJyakVvCTs8trBJg7DY
+GET https://xd3utnv17sc2.cybozu.com/k/v1/file.json?fileKey=2023061900400941CA415F35B542C39575409D4A1EEB20207
+X-Cybozu-API-Token: WDPSX1L5fSpI0gotEzB8ZjJyakVvCTs8trBJg7DY
