@@ -15,7 +15,12 @@ class CreatePostdataTable extends Migration
     {
         Schema::create('postdata', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->int('student_id')->unique();
+            $table->string('title');
+            $table->string('image');
+            $table->string('message');
+            $table->int('status');
+            $table->int('postdata_id');
         });
     }
 
