@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GetTestController;
+use App\Http\Controllers\PostController;
+use App\Http\Requests\PostArticleRequest;
 
 
 /*
@@ -24,3 +26,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/gettest', [GetTestController::class, 'index']);
+Route::get('/articles/create', [PostController::class, 'create'])->name('article.create');
+Route::post('/articles', [PostController::class, 'store'])->name('article.store');
+
